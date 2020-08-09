@@ -89,21 +89,16 @@ export default function App() {
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={{ alignSelf: "center" }}
-            onPress={
-              (sharePost = () => {
-                Share.share(
-                  {
-                    message: `Hey look at this screenshot`,
-                    url: Expo.takeSnapshotAsync(),
-                    title: `Screen Shot`,
-                  },
-                  {
-                    dialogTitle: "Share your screenshot",
-                  }
-                );
-              })
-            }
+            style={{
+              alignSelf: "flex-end",
+              right: -145,
+              height: 55,
+            }}
+            onPress={async () => {
+              if (cameraRef) {
+                let photo = await cameraRef.takePictureAsync();
+              }
+            }}
           >
             <SafeAreaView
               style={{
