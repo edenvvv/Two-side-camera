@@ -1,4 +1,4 @@
-# Two-side-of-camera
+# Two-side-camera
 
 (The examples are presentations on the iPhone 8 but works perfect on all other devices)
 # Preview:
