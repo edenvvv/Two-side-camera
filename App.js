@@ -1,7 +1,10 @@
+// eden dadon
 import React, { useState, useEffect } from "react";
 import { Text, View, TouchableOpacity, SafeAreaView } from "react-native";
 import { Camera as Camera1 } from "expo-camera";
 import { Camera as Camera2 } from "expo-camera";
+
+// blob
 
 export default function App() {
   const [hasPermission, setHasPermission] = useState(null);
